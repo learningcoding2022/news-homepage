@@ -1,6 +1,9 @@
 /*order of import does matter*/
 /* order of this allows base file to know variables*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import "./variables";
+@import "./components";
+
 /* reset styles */
 * {
   color: inherit;
@@ -16,11 +19,13 @@ body {
 nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  padding-top: 10px;
 }
 
-#section-one {
-  padding: 0 40px 0 80px;
+.section-container {
+  padding: 40px 0 40px 0;
 }
 
 ul {
@@ -32,9 +37,12 @@ a {
   text-decoration: none;
 }
 
-hr {
-  border: 0;
-  border-top: 1px dotted #efefef;
+p {
+  @include primary-text();
+}
+
+h1 {
+  @include tertiary-text();
 }
 
 img {
