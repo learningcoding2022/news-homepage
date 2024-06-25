@@ -1,0 +1,41 @@
+//theme colors
+$c-black: #000000;
+$c-white: #FFFFFF;
+$c-orange: #d69947;
+$c-coral: #f05d53;
+
+//background colors
+$c-background-black: #{$c-black};
+$c-background-white: #{$c-white};
+
+//primary button
+$c-button-primary: #{$c-coral};
+$c-button-secondary: #{c-black};
+$c-button-secondary-text: #{$c-white};
+
+//button text
+$c-button-primary-text: #{$c-black};
+$c-button-secondary-text: #{$c-white};
+
+@mixin primary-text {
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.0em;
+text-align: left;
+}
+
+@mixin secondary-text {
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2.5em;
+letter-spacing: 1.5px;
+}
+
+@mixin button {
+background-color: white;
+border: 2px solid white;
+border-radius: 20px;
+padding: 10px;
+}
