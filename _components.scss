@@ -1,56 +1,17 @@
-//theme colors
-$c-black: #000000;
-$c-white: #FFFFFF;
-$c-orange: #d69947;
-$c-coral: #f05d53;
+@import "./variables";
 
-//background colors
-$c-background-black: #{$c-black};
-$c-background-white: #{$c-white};
-
-//primary button
-$c-button-primary: #{$c-coral};
-$c-button-secondary: #{c-black};
-$c-button-secondary-text: #{$c-white};
-
-//button text
-$c-button-primary-text: #{$c-black};
-$c-button-secondary-text: #{$c-white};
-
-@mixin primary-text {
-font-family: "Inter", sans-serif;
-font-weight: 400;
-font-style: normal;
-font-size: 3.0em;
-text-align: left;
+@mixin flexCenter {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
 }
 
-@mixin secondary-text {
-font-family: "Inter", sans-serif;
-font-weight: bold;
-font-style: normal;
-font-size: 2.5em;
+//mixin for desktop
+@mixin flexDesk {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
 }
 
-@mixin tertiary-text {
-font-family: "Inter", sans-serif;
-font-weight:bolder;
-font-style: normal;
-font-size: 2.0em;
-}
-
-@mixin button {
-background-color: coral;
-color: $c-button-primary-text;
-padding: 10px;//may need to change this
-}
-
-@mixin lightMode {
-background-color: $c-background-white;
-color: $c-black;
-}
-
-@mixin darkMode {
-background-color: $c-background-black;
-color: $c-white;
-}
