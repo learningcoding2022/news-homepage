@@ -43,16 +43,8 @@ nav {
   background-color: orange;
 }
 
-.section-image {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: pink;
-}
-
-ul {
-  padding: 0;
-  list-style-type: none;
+.image-text {
+  padding-left: 10px;
 }
 
 a {
@@ -115,8 +107,8 @@ h4 {
   font-size: 1.25em;
 }
 
-img {
-  max-width: 100%;
+.w-icon {
+  width: 100%;
 }
 
 /*the order of these matters less*/ /*# sourceMappingURL=index.css.map */
