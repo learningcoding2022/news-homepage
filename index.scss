@@ -47,7 +47,20 @@ p {
 }
 
 h1 {
+  @include quinary-text();
+}
+
+h2 {
+  @include quaternary-text();
+  color: $c-orange;
+}
+
+h3 {
   @include tertiary-text();
+}
+
+h4 {
+  @include secondary-text();
 }
 
 img {

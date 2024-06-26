@@ -17,25 +17,46 @@ $c-button-secondary-text: #{$c-white};
 $c-button-primary-text: #{$c-black};
 $c-button-secondary-text: #{$c-white};
 
+//p
 @mixin primary-text {
 font-family: "Inter", sans-serif;
 font-weight: 400;
 font-style: normal;
-font-size: 1.5em;
+font-size: 1.0em;
 text-align: left;
 //double check below font
 padding: 10px 0;
 letter-spacing: 1px;
 }
 
+//h4
 @mixin secondary-text {
 font-family: "Inter", sans-serif;
 font-weight: bold;
 font-style: normal;
-font-size: 2.5em;
+font-size: 1.25em;
 }
 
+//h3
 @mixin tertiary-text {
+font-family: "Inter", sans-serif;
+font-weight:bold;
+font-style: normal;
+font-size: 2.5em;
+padding: 10px 0 10px 0;//may need to change
+}
+
+//h2
+@mixin quaternary-text {
+font-family: "Inter", sans-serif;
+font-weight:bold;
+font-style: normal;
+font-size: 2.75em;
+padding: 10px 0 10px 0;
+}
+
+//h1
+@mixin quinary-text {
 font-family: "Inter", sans-serif;
 font-weight:bolder;
 font-style: normal;
