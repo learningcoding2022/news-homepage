@@ -12,8 +12,8 @@
 
 body {
   font-family: Poppins;
-  background-color: aqua;
   padding: 0px 20px;
+  background-color: lightgreen;
 }
 
 nav {
@@ -24,18 +24,35 @@ nav {
   padding-top: 10px;
 }
 
-.section-container {
-  @include sectionContainer();
-}
-
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;
 }
 
-#section-container-2 {
-@include darkTheme();
+#section-container-1 {
+  background-color: pink;
 }
+
+#section-container-2 {
+  @include darkTheme();
+  margin-bottom: 20px;
+}
+
+.section-three-container {
+  display: flex;
+  background-color: orange;
+}
+
+.section-image {
+  max-width: 120px;
+  background-color: pink;
+  img {
+    max-width: 120px;
+    height: 100px;
+  }
+}
+
+
 
 ul {
   padding: 0;
@@ -72,8 +89,8 @@ h4 {
   @include secondary-text();
 }
 
-img {
-  max-width: 100%;
+.w-icon {
+  width: 100%;
 }
 
 

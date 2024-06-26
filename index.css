@@ -9,8 +9,8 @@
 
 body {
   font-family: Poppins;
-  background-color: aqua;
   padding: 0px 20px;
+  background-color: lightgreen;
 }
 
 nav {
@@ -21,16 +21,13 @@ nav {
   padding-top: 10px;
 }
 
-.section-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  flex-wrap: wrap;
-}
-
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;
+}
+
+#section-container-1 {
+  background-color: pink;
 }
 
 #section-container-2 {
@@ -38,6 +35,19 @@ nav {
   color: #FFFFFF;
   padding-right: 10px;
   padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.section-three-container {
+  display: flex;
+  background-color: orange;
+}
+
+.section-image {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
 }
 
 ul {
@@ -53,7 +63,7 @@ button {
   background-color: coral;
   border: none;
   display: flex;
-  margin: 20px auto 0px auto;
+  margin: 20px auto 20px auto;
   justify-content: center;
   font-family: "Inter", sans-serif;
   font-weight: bold;
