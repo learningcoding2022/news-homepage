@@ -26,6 +26,9 @@ nav {
 
 .section-container {
   @include sectionContainer();
+  .section-three-container {
+    display: flex;
+  }
 }
 
 .text-box {
