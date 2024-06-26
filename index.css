@@ -36,14 +36,16 @@ a {
 
 button {
   background-color: coral;
-  color: #000000;
-  padding: 10px;
-  font-size: 1.5em;
-  font-weight: bold;
   border: none;
   display: flex;
   margin: 20px auto 0px auto;
   justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5em;
+  padding: 10px;
+  color: #000000;
 }
 
 p {

@@ -39,6 +39,7 @@ a {
 
 button {
   @include button();
+  @include button-text();
 }
 
 p {

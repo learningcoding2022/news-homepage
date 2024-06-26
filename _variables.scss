@@ -45,14 +45,19 @@ padding: 10px 0 10px 0;
 
 @mixin button {
 background-color: coral;
-color: $c-button-primary-text;
-padding: 10px;//may need to change this
-font-size: 1.5em;
-font-weight: bold;
 border: none;
 display: flex;
 margin: 20px auto 0px auto;
 justify-content: center;
+}
+
+@mixin button-text {
+font-family: "Inter", sans-serif;
+font-weight: bold;
+font-style: normal;
+font-size: 1.5em;  
+padding: 10px;
+color: $c-button-primary-text;
 }
 
 @mixin lightTheme {
