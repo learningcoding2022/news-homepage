@@ -13,6 +13,7 @@
 body {
   font-family: Poppins;
   padding: 0px 20px;
+  background-color: lightgreen;
 }
 
 nav {
@@ -28,10 +29,30 @@ nav {
   border-bottom: solid white 1px;
 }
 
+#section-container-1 {
+  background-color: pink;
+}
+
+#section-container-2 {
+  @include darkTheme();
+  margin-bottom: 20px;
+}
+
 .section-three-container {
   display: flex;
   background-color: orange;
 }
+
+.section-image {
+  max-width: 120px;
+  background-color: pink;
+  img {
+    max-width: 120px;
+    height: 100px;
+  }
+}
+
+
 
 ul {
   padding: 0;
@@ -68,8 +89,8 @@ h4 {
   @include secondary-text();
 }
 
-img {
-  max-width: 100%;
+.w-icon {
+  width: 100%;
 }
 
 
