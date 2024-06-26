@@ -17,32 +17,68 @@ $c-button-secondary-text: #{$c-white};
 $c-button-primary-text: #{$c-black};
 $c-button-secondary-text: #{$c-white};
 
+//p
 @mixin primary-text {
 font-family: "Inter", sans-serif;
 font-weight: 400;
 font-style: normal;
-font-size: 3.0em;
+font-size: 1.0em;
 text-align: left;
+//double check below font
+padding: 10px 0;
+letter-spacing: 1px;
 }
 
+//h4
 @mixin secondary-text {
 font-family: "Inter", sans-serif;
 font-weight: bold;
 font-style: normal;
-font-size: 2.5em;
+font-size: 1.25em;
 }
 
+//h3
 @mixin tertiary-text {
+font-family: "Inter", sans-serif;
+font-weight:bold;
+font-style: normal;
+font-size: 2.5em;
+padding: 10px 0 10px 0;//may need to change
+}
+
+//h2
+@mixin quaternary-text {
+font-family: "Inter", sans-serif;
+font-weight:bold;
+font-style: normal;
+font-size: 2.75em;
+padding: 10px 0 10px 0;
+}
+
+//h1
+@mixin quinary-text {
 font-family: "Inter", sans-serif;
 font-weight:bolder;
 font-style: normal;
-font-size: 2.0em;
+font-size: 3.0em;
+padding: 10px 0 10px 0;
 }
 
 @mixin button {
 background-color: coral;
+border: none;
+display: flex;
+margin: 20px auto 0px auto;
+justify-content: center;
+}
+
+@mixin button-text {
+font-family: "Inter", sans-serif;
+font-weight: bold;
+font-style: normal;
+font-size: 1.5em;  
+padding: 10px;
 color: $c-button-primary-text;
-padding: 10px;//may need to change this
 }
 
 @mixin lightTheme {
@@ -56,4 +92,6 @@ button {
 @mixin darkTheme {
 background-color: $c-background-black;
 color: $c-white;
+padding-right: 10px;
+padding-left: 10px;
 }

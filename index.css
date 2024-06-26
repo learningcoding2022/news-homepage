@@ -10,12 +10,34 @@
 body {
   font-family: Poppins;
   background-color: aqua;
+  padding: 0px 20px;
 }
 
 nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  padding-top: 10px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.text-box {
+  padding: 20px 0;
+  border-bottom: solid white 1px;
+}
+
+#section-container-2 {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 ul {
@@ -27,17 +49,64 @@ a {
   text-decoration: none;
 }
 
-hr {
-  border: 0;
-  border-top: 1px dotted #efefef;
+button {
+  background-color: coral;
+  border: none;
+  display: flex;
+  margin: 20px auto 0px auto;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5em;
+  padding: 10px;
+  color: #000000;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  text-align: left;
+  padding: 10px 0;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 3em;
+  padding: 10px 0 10px 0;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.75em;
+  padding: 10px 0 10px 0;
+  color: #d69947;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.5em;
+  padding: 10px 0 10px 0;
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.25em;
 }
 
 img {
   max-width: 100%;
-}
-
-h1 a {
-  color: red;
 }
 
 /*the order of these matters less*/ /*# sourceMappingURL=index.css.map */
