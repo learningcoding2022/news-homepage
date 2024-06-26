@@ -25,12 +25,17 @@ nav {
 }
 
 .section-container {
-  @include sectionContainer();
+  padding: 40px 0 40px 0;
 }
 
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;
+}
+
+.section-three-container {
+  display: flex;
+  flex-direction: column;
 }
 
 #section-container-2 {
