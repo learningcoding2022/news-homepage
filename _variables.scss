@@ -92,4 +92,6 @@ button {
 @mixin darkTheme {
 background-color: $c-background-black;
 color: $c-white;
+padding-right: 10px;
+padding-left: 10px;
 }
