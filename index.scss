@@ -34,7 +34,7 @@ nav {
 }
 
 #section-container-2 {
-@include darkTheme;
+@include darkTheme();
 }
 
 ul {
