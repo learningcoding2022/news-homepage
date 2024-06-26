@@ -34,6 +34,18 @@ a {
   text-decoration: none;
 }
 
+button {
+  background-color: coral;
+  color: #000000;
+  padding: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  margin: 20px auto 0px auto;
+  justify-content: center;
+}
+
 p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
