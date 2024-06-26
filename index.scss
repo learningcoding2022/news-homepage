@@ -25,7 +25,7 @@ nav {
 }
 
 .section-container {
-  padding: 40px 0 40px 0;
+  @include sectionContainer();
 }
 
 .text-box {

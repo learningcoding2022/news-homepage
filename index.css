@@ -22,7 +22,10 @@ nav {
 }
 
 .section-container {
-  padding: 40px 0 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
 }
 
 .text-box {
