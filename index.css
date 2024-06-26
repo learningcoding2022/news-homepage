@@ -9,7 +9,6 @@
 
 body {
   font-family: Poppins;
-  background-color: aqua;
   padding: 0px 20px;
 }
 
@@ -21,23 +20,18 @@ nav {
   padding-top: 10px;
 }
 
-.section-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  flex-wrap: wrap;
-}
-
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;
 }
 
-#section-container-2 {
-  background-color: #000000;
-  color: #FFFFFF;
-  padding-right: 10px;
-  padding-left: 10px;
+#section-container-1 .section-container {
+  background-color: pink;
+}
+
+.section-three-container {
+  display: flex;
+  background-color: orange;
 }
 
 ul {
