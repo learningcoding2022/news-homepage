@@ -43,7 +43,8 @@ font-family: "Inter", sans-serif;
 font-weight:bold;
 font-style: normal;
 font-size: 2.5em;
-padding: 10px 0 10px 0;//may need to change
+padding: 0px 0 10px 0;//may need to change
+color: $c-coral;
 }
 
 //h2
@@ -68,7 +69,7 @@ padding: 10px 0 10px 0;
 background-color: coral;
 border: none;
 display: flex;
-margin: 20px auto 20px auto;
+margin: 20px auto 60px auto;
 justify-content: center;
 }
 
