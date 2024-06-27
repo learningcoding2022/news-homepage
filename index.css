@@ -43,6 +43,14 @@ nav {
   background-color: orange;
 }
 
+@media (min-width: 1200px) {
+  .section-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
 .image-text {
   padding-left: 10px;
 }

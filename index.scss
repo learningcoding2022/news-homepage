@@ -47,6 +47,14 @@ nav {
   //}
 }
 
+.section-container-wrapper {
+  @media(min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
 .image-text {
   padding-left: 10px;
 }
