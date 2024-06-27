@@ -41,22 +41,14 @@ nav {
 .section-three-container {
   display: flex;
   background-color: orange;
+  //img {
+    //max-width: 120px;
+    //height: 100px;
+  //}
 }
 
-.section-image {
-  max-width: 120px;
-  background-color: pink;
-  img {
-    max-width: 120px;
-    height: 100px;
-  }
-}
-
-
-
-ul {
-  padding: 0;
-  list-style-type: none;
+.image-text {
+  padding-left: 10px;
 }
 
 a {
