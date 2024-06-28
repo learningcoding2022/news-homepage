@@ -84,6 +84,7 @@ nav {
   .section-three-container {
     width: 33%;
     flex-wrap: nowrap;
+    padding-bottom: initial;
   }
 }
 
@@ -111,6 +112,11 @@ nav {
 @media (min-width: 1200px) {
   .image-text {
     max-width: 250px;
+  }
+}
+@media (min-width: 1200px) {
+  .image-text p {
+    padding-bottom: 0px;
   }
 }
 
