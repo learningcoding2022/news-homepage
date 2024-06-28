@@ -31,6 +31,14 @@ nav {
   border-bottom: solid white 1px;
 }
 
+.blocks-text {
+  @media(min-width: 1200px) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+}
+
 #section-container-1 {
   display: flex;
   flex-direction: column;
@@ -58,6 +66,7 @@ nav {
 
   @media(min-width: 1200px) {
     width: 30%;
+    margin-top: 30px;
   }
 }
 
@@ -114,8 +123,18 @@ p {
   @include primary-text();
 }
 
+.blocks-text p {
+  @media(min-width: 1200px) {
+    width: 50%;
+  }
+}
+
 h1 {
   @include quinary-text();
+  @media(min-width: 1200px) {
+    width: 40%;
+    padding-right: 40px;
+  }
 }
 
 h2 {
