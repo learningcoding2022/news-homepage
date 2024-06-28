@@ -39,6 +39,8 @@ nav {
 @media (min-width: 1200px) {
   #section-container-1 img {
     max-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -82,6 +84,15 @@ nav {
 @media (min-width: 1200px) {
   #section-container-3 {
     display: flex;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 

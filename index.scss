@@ -14,6 +14,8 @@ body {
   font-family: Poppins;
   padding: 0px 20px;
   background-color: lightgreen;
+
+  //max-width 1200px
 }
 
 nav {
@@ -34,17 +36,16 @@ nav {
   flex-direction: column;
   background-color: pink;
   img {
-    //max-width: 300px;
     width: 100%;
     height: auto;
     padding-top: 30px;
 
     @media(min-width: 1200px) {
       max-height: 200px;
+      object-fit: cover;
     }
   }
   
-
   @media(min-width: 1200px) {
     width: 60%;
   }
@@ -81,9 +82,17 @@ nav {
 
   @media(min-width: 1200px) {
     display: flex;
+    width: 100%;
   }
 }
 
+.section-container-wrapper {
+  @media(min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .image-text {
   padding-left: 10px;
