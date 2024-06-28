@@ -123,9 +123,10 @@ p {
   @include primary-text();
 }
 
-.blocks-text p {
+.blocks-para-button {
   @media(min-width: 1200px) {
-    width: 50%;
+    width: 45%;
+    padding-top: 30px;
   }
 }
 
@@ -133,7 +134,7 @@ h1 {
   @include quinary-text();
   @media(min-width: 1200px) {
     width: 40%;
-    padding-right: 40px;
+    padding: 40px 30px;
   }
 }
 

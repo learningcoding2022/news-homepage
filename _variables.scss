@@ -71,6 +71,9 @@ border: none;
 display: flex;
 margin: 20px auto 60px auto;
 justify-content: center;
+@media(min-width: 1200px)  {
+    margin: 25px auto;
+}
 }
 
 @mixin button-text {
