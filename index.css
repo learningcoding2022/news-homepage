@@ -21,6 +21,12 @@ nav {
   padding-top: 10px;
 }
 
+.hamburger {
+  display: block;
+  width: 35px;
+  cursor: pointer;
+}
+
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;
@@ -201,8 +207,4 @@ h4 {
 
 .w-icon {
   width: 100%;
-}
-
-@media only screen and (min-width: 1200px) {
-  /*Desktop Styles here*/
 }/*# sourceMappingURL=index.css.map */
