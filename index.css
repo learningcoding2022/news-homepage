@@ -45,8 +45,12 @@ nav {
   transition: 0.4s;
 }
 
-.hamburger.is-active:after {
-  transform: rotate(-45deg) translate(-9px, 6px);
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:active {
+  transform: rotate(45deg) translate(-9px, -8px);
 }
 
 .text-box {
