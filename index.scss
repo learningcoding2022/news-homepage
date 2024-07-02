@@ -52,12 +52,12 @@ nav {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
 
-.hamburger.is-active:active{
+.hamburger.is-active:after{
   transform: rotate(45deg) translate(-9px, -8px);
 }
 
 .hamburger.is-active .bar {
-
+  opacity: 0;
 }
 
 .text-box {
