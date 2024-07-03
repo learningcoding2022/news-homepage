@@ -35,9 +35,17 @@ body {
     display: inline-block;
   }
 
+  a:hover {
+    color: $c-coral;
+  }
+
   .w-icon {
     background-color: lavender;
   }
+}
+
+@media screen and (max-width: 650px) {
+  
 }
 
 .text-box {
