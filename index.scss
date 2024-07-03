@@ -20,9 +20,18 @@ body {
 
 .navbar {
   background: darkgray;
-  
-}
 
+  ul {
+    margin: unset; 
+    padding: unset;
+    list-style: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
 
 .text-box {
   padding: 20px 0;
@@ -115,10 +124,6 @@ body {
   }
 }
 
-a {
-  text-decoration: none;
-}
-
 button {
   @include button();
   @include button-text();
@@ -156,9 +161,9 @@ h4 {
   @include secondary-text();
 }
 
-.w-icon {
-  width: 100%;
-}
+//.w-icon {
+  //width: 100%;
+//}
 
 
   
