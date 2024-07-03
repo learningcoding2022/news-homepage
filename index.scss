@@ -60,6 +60,25 @@ nav {
   opacity: 0;
 }
 
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: aquamarine;
+  padding-top: 120px;
+  a {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background-color: purple;
+  }
+}
+
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;
