@@ -13,71 +13,14 @@
 body {
   font-family: Poppins;
   padding: 0px 20px;
-  background-color: lightgreen;
-
   //max-width 1200px
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
+.navbar {
+  background: darkgray;
+  
 }
 
-.hamburger {
-  position: relative;
-  display: block;
-  width: 35px;
-  height: 35px;
-  appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-.hamburger .bar .hamburger:after, .hamburger:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0px;
-  transition: 0.4s;
-}
-
-.hamburger.is-active:before{
-  transform: rotate(-45deg) translate(-8px, 6px);
-}
-
-.hamburger.is-active:after{
-  transform: rotate(45deg) translate(-9px, -8px);
-}
-
-.hamburger.is-active .bar {
-  opacity: 0;
-}
-
-.mobile-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: block;
-  z-index: 98;
-  background-color: aquamarine;
-  padding-top: 120px;
-  a {
-    display: block;
-    text-align: center;
-    margin-bottom: 16px;
-    padding: 12px 16px;
-    background-color: purple;
-  }
-}
 
 .text-box {
   padding: 20px 0;
