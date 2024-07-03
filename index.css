@@ -15,6 +15,7 @@ body {
 
 .navbar {
   background: darkgray;
+  position: relative;
 }
 .navbar ul {
   margin: unset;
@@ -36,6 +37,12 @@ body {
 }
 .navbar .w-icon {
   background-color: lavender;
+}
+.navbar .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px;
 }
 
 @media screen and (max-width: 650px) {
