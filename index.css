@@ -14,12 +14,15 @@ body {
 }
 
 .navbar {
-  background: darkgray;
+  position: relative;
 }
 .navbar ul {
   margin: unset;
   padding: unset;
   list-style: none;
+  display: flex;
+}
+.navbar .nav-toggle {
   display: flex;
 }
 .navbar a {
@@ -31,10 +34,21 @@ body {
 .navbar a:hover {
   color: #f05d53;
 }
-.navbar .w-icon {
-  background-color: lavender;
+.navbar .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px;
+  border: unset;
+  background: unset;
+  cursor: pointer;
 }
 
+@media screen and (max-width: 650px) {
+  .navbar .nav-toggle {
+    display: none;
+  }
+}
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;

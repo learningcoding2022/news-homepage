@@ -19,12 +19,16 @@ body {
 }
 
 .navbar {
-  background: darkgray;
+  position: relative;
 
   ul {
     margin: unset; 
     padding: unset;
     list-style: none;
+    display: flex;
+  }
+
+  .nav-toggle {
     display: flex;
   }
 
@@ -40,12 +44,24 @@ body {
   }
 
   .w-icon {
-    background-color: lavender;
+    
+  }
+
+  .hamburger {
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    border: unset;
+    background: unset;
+    cursor: pointer;
   }
 }
 
 @media screen and (max-width: 650px) {
-  
+  .navbar .nav-toggle {
+    display: none;
+  }
 }
 
 .text-box {
