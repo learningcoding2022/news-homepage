@@ -14,7 +14,6 @@ body {
 }
 
 .navbar {
-  background: darkgray;
   position: relative;
 }
 .navbar ul {
@@ -35,14 +34,14 @@ body {
 .navbar a:hover {
   color: #f05d53;
 }
-.navbar .w-icon {
-  background-color: lavender;
-}
 .navbar .hamburger {
   position: absolute;
   top: 0;
   right: 0;
   margin: 0px;
+  border: unset;
+  background: unset;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 650px) {
