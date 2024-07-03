@@ -48,7 +48,6 @@ body {
 #section-container-1 {
   display: flex;
   flex-direction: column;
-  background-color: pink;
 }
 #section-container-1 img {
   width: 100%;
@@ -84,7 +83,6 @@ body {
 
 .section-three-container {
   display: flex;
-  background-color: orange;
   padding-bottom: 30px;
 }
 .section-three-container img {
