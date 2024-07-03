@@ -28,6 +28,9 @@ body {
   text-decoration: none;
   display: inline-block;
 }
+.navbar a:hover {
+  color: #f05d53;
+}
 .navbar .w-icon {
   background-color: lavender;
 }

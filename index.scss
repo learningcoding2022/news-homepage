@@ -35,6 +35,10 @@ body {
     display: inline-block;
   }
 
+  a:hover {
+    color: $c-coral;
+  }
+
   .w-icon {
     background-color: lavender;
   }
