@@ -28,6 +28,10 @@ body {
     display: flex;
   }
 
+  .nav-toggle {
+    display: flex;
+  }
+
   a {
     padding: 1em;
     color: inherit;
@@ -45,7 +49,9 @@ body {
 }
 
 @media screen and (max-width: 650px) {
-  
+  .navbar .nav-toggle {
+    display: none;
+  }
 }
 
 .text-box {

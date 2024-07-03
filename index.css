@@ -22,6 +22,9 @@ body {
   list-style: none;
   display: flex;
 }
+.navbar .nav-toggle {
+  display: flex;
+}
 .navbar a {
   padding: 1em;
   color: inherit;
@@ -35,6 +38,11 @@ body {
   background-color: lavender;
 }
 
+@media screen and (max-width: 650px) {
+  .navbar .nav-toggle {
+    display: none;
+  }
+}
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;
