@@ -45,6 +45,15 @@ body {
 }
 
 @media screen and (max-width: 650px) {
+  .navbar.open ul {
+    display: block;
+  }
+  .navbar.open .nav-toggle {
+    display: block;
+  }
+  .navbar.open a {
+    display: block;
+  }
   .navbar .nav-toggle {
     display: none;
   }
