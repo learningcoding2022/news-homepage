@@ -52,6 +52,10 @@ body {
     background: unset;
     cursor: pointer;
   }
+
+  .hamburger .icon-close {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -70,6 +74,15 @@ body {
   .navbar .nav-toggle {
     display: none;
   }
+
+  .navbar.open .hamburger .icon-open {
+    display: none;
+  }
+
+  .navbar.open .hamburger .icon-close {
+    display: block;
+  }
+
 }
 
 .text-box {
