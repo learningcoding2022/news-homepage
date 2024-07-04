@@ -15,13 +15,14 @@ body {
 
 .navbar {
   position: relative;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .navbar ul {
   margin: unset;
   padding: unset;
   list-style: none;
   display: flex;
+  justify-content: space-between;
 }
 .navbar .nav-toggle {
   display: flex;
