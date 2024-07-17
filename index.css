@@ -10,26 +10,70 @@
 body {
   font-family: Poppins;
   padding: 0px 20px;
-  background-color: lightgreen;
+  margin: unset;
 }
 
-nav {
+.navbar {
+  position: relative;
+}
+.navbar ul {
+  margin: unset;
+  padding: unset;
+  list-style: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
+}
+.navbar .nav-toggle {
+  display: flex;
+}
+.navbar a {
+  padding: 1em;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.navbar a:hover {
+  color: #f05d53;
+}
+.navbar .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px;
+  border: unset;
+  background: unset;
+  cursor: pointer;
 }
 
+@media screen and (max-width: 650px) {
+  .navbar.open ul {
+    display: block;
+  }
+  .navbar.open .nav-toggle {
+    display: block;
+  }
+  .navbar.open a {
+    display: block;
+  }
+  .navbar .nav-toggle {
+    display: none;
+  }
+}
 .text-box {
   padding: 20px 0;
   border-bottom: solid white 1px;
 }
 
+@media (min-width: 1200px) {
+  .blocks-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 #section-container-1 {
   display: flex;
   flex-direction: column;
-  background-color: pink;
 }
 #section-container-1 img {
   width: 100%;
@@ -39,6 +83,8 @@ nav {
 @media (min-width: 1200px) {
   #section-container-1 img {
     max-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -57,12 +103,12 @@ nav {
 @media (min-width: 1200px) {
   #section-container-2 {
     width: 30%;
+    margin-top: 30px;
   }
 }
 
 .section-three-container {
   display: flex;
-  background-color: orange;
   padding-bottom: 30px;
 }
 .section-three-container img {
@@ -73,6 +119,7 @@ nav {
   .section-three-container {
     width: 33%;
     flex-wrap: nowrap;
+    padding-bottom: initial;
   }
 }
 
@@ -82,6 +129,15 @@ nav {
 @media (min-width: 1200px) {
   #section-container-3 {
     display: flex;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-container-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -93,9 +149,10 @@ nav {
     max-width: 250px;
   }
 }
-
-a {
-  text-decoration: none;
+@media (min-width: 1200px) {
+  .image-text p {
+    padding-bottom: 0px;
+  }
 }
 
 button {
@@ -111,6 +168,11 @@ button {
   padding: 10px;
   color: #000000;
 }
+@media (min-width: 1200px) {
+  button {
+    margin: 25px auto;
+  }
+}
 
 p {
   font-family: "Inter", sans-serif;
@@ -122,12 +184,25 @@ p {
   letter-spacing: 1px;
 }
 
+@media (min-width: 1200px) {
+  .blocks-para-button {
+    width: 45%;
+    padding-top: 30px;
+  }
+}
+
 h1 {
   font-family: "Inter", sans-serif;
   font-weight: bolder;
   font-style: normal;
   font-size: 3em;
   padding: 10px 0 10px 0;
+}
+@media (min-width: 1200px) {
+  h1 {
+    width: 40%;
+    padding: 40px 30px;
+  }
 }
 
 h2 {
@@ -153,12 +228,4 @@ h4 {
   font-weight: bold;
   font-style: normal;
   font-size: 1.25em;
-}
-
-.w-icon {
-  width: 100%;
-}
-
-@media only screen and (min-width: 1200px) {
-  /*Desktop Styles here*/
 }/*# sourceMappingURL=index.css.map */

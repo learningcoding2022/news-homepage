@@ -13,15 +13,63 @@
 body {
   font-family: Poppins;
   padding: 0px 20px;
-  background-color: lightgreen;
+  //max-width 1200px?
+  //adding margin unset
+  margin: unset;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 10px;
+.navbar {
+  position: relative;
+
+  ul {
+    margin: unset; 
+    padding: unset;
+    list-style: none;
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  a {
+    padding: 1em;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a:hover {
+    color: $c-coral;
+  }
+
+  .hamburger {
+    position:absolute;
+    top: 0;
+    right: 0;
+    margin: 0px;
+    border: unset;
+    background: unset;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar.open ul {
+    display: block;
+  }
+  
+  .navbar.open .nav-toggle {
+    display: block;
+  }
+
+  .navbar.open a {
+    display: block;
+  }
+  
+  .navbar .nav-toggle {
+    display: none;
+  }
 }
 
 .text-box {
@@ -29,22 +77,28 @@ nav {
   border-bottom: solid white 1px;
 }
 
+.blocks-text {
+  @media(min-width: 1200px) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+}
+
 #section-container-1 {
   display: flex;
   flex-direction: column;
-  background-color: pink;
   img {
-    //max-width: 300px;
     width: 100%;
     height: auto;
     padding-top: 30px;
 
     @media(min-width: 1200px) {
       max-height: 200px;
+      object-fit: cover;
     }
   }
   
-
   @media(min-width: 1200px) {
     width: 60%;
   }
@@ -57,22 +111,24 @@ nav {
 
   @media(min-width: 1200px) {
     width: 30%;
+    margin-top: 30px;
   }
 }
 
 .section-three-container {
   display: flex;
-  background-color: orange;
   padding-bottom: 30px;
   img {
     width: 120px;
     height: auto;
+
     //height: 100px;
   }
 
   @media(min-width: 1200px) {
     width: 33%;
     flex-wrap: nowrap;
+    padding-bottom: initial;
     }
 }
 
@@ -81,19 +137,28 @@ nav {
 
   @media(min-width: 1200px) {
     display: flex;
+    width: 100%;
   }
 }
 
+.section-container-wrapper {
+  @media(min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .image-text {
   padding-left: 10px;
   @media(min-width: 1200px) {
     max-width: 250px;
   }
-}
-
-a {
-  text-decoration: none;
+  p {
+    @media(min-width: 1200px) {
+      padding-bottom: 0px;
+    }
+  }
 }
 
 button {
@@ -105,8 +170,19 @@ p {
   @include primary-text();
 }
 
+.blocks-para-button {
+  @media(min-width: 1200px) {
+    width: 45%;
+    padding-top: 30px;
+  }
+}
+
 h1 {
   @include quinary-text();
+  @media(min-width: 1200px) {
+    width: 40%;
+    padding: 40px 30px;
+  }
 }
 
 h2 {
@@ -122,15 +198,7 @@ h4 {
   @include secondary-text();
 }
 
-.w-icon {
-  width: 100%;
-}
 
 
-@media only screen and (min-width: 1200px) {
-  /*Desktop Styles here*/
-  
-
-  };
   
   

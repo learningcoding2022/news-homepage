@@ -17,25 +17,39 @@
 </head>
 
 <body>
-<!--navigation-icon and hamburger menu-->
-  <nav>
-    <div class="w-icon">
-      <img src="./assets/images/logo.svg" alt="W icon">
-    </div>
-    
-    <div class="hamburger">
-      <img src="./assets/images/icon-menu.svg" alt="hamburger icon">
-    </div>
-    <!--menu for desktop
+  <nav id="navbar" class="navbar">
     <ul>
-      <li><a href="#">Home</a></li> 
-      <li><a href="#about">New</a></li>
-      <li><a href="#skills">Popular</a></li>
-      <li><a href="#contact">Trending</a></li>
-      <li><a href="#contact">Categories</a></li> 
-    </ul> --> 
+      <li>
+        <img src="./assets/images/logo.svg" alt="W icon" class="w-icon">
+      </li>
+      <div class="nav-toggle">
+        <li>
+          <a href="#">Home</a> 
+        </li>
+        <li>
+          <a href="#">New</a> 
+        </li>
+        <li>
+          <a href="#">Popular</a> 
+        </li>
+        <li>
+          <a href="#">Trending</a> 
+        </li>
+        <li>
+          <a href="#">Categories</a> 
+        </li>
+      </div>
+    </ul>
+    <button id="hamburger-toggle" class="hamburger">
+      <div class="icon-open">
+        <img src="./assets/images/icon-menu.svg">
+      </div>
+      <div class="icon-close">
+        <img src="./assets/images/icon-menu-close.svg">
+      </div>
+    </button>
   </nav>
-
+  <!--main???-->
   <section class="section-container-wrapper">
   <!--section 1--image and content-->
     <section class="section-container" id="section-container-1">
@@ -43,9 +57,11 @@
       <img src="./assets/images/image-web-3-mobile.jpg" alt="blocks">
       <div class="blocks-text">
         <h1>The Bright Future of Web 3.0?</h1>
-        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+        <div class="blocks-para-button">
+          <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
           But is it really fulfilling its promise?</p>
-        <button class="buttons">Read more</button>
+          <button class="buttons">Read more</button>
+        </div>
       </div>
     </section>
     <!--ends section 1-->
@@ -114,6 +130,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./java.js">
+  </script>
 </body>
 
 </html>
