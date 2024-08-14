@@ -16,9 +16,9 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+This challenge was to build out this news website homepage as similar to the design as possible.
 
 ### The challenge
 
@@ -29,83 +29,124 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./assets/images/learningcoding2022.github.io_news-homepage_.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://learningcoding2022.github.io/news-homepage/
 
 ## My process
+
+I coded this project with a mobile first approach. In order to create the html, css, and javascript for the hamburger menu for mobile that disappears for desktop, I used outside resources that are provided in the useful resources section below. 
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
+- Sass
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+This is the first project with a nav bar I coded that changes when it is in mobile mode as compared to desktop. It took research and problem solving to determine the code under the nav id of "navbar". I also learned how to develop a hamburger menu with an icon that changes from a hamburger icon to a close icon. Here is some code I am proud of:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+  <nav id="navbar" class="navbar">
+    <ul>
+      <li>
+        <img src="./assets/images/logo.svg" alt="W icon" class="w-icon">
+      </li>
+      <div class="nav-toggle">
+        <li>
+          <a href="#">Home</a> 
+        </li>
+        <li>
+          <a href="#">New</a> 
+        </li>
+        <li>
+          <a href="#">Popular</a> 
+        </li>
+        <li>
+          <a href="#">Trending</a> 
+        </li>
+        <li>
+          <a href="#">Categories</a> 
+        </li>
+      </div>
+    </ul>
+    <button id="hamburger-toggle" class="hamburger">
+      <div class="icon-open">
+        <img src="./assets/images/icon-menu.svg">
+      </div>
+      <div class="icon-close">
+        <img src="./assets/images/icon-menu-close.svg">
+      </div>
+    </button>
+  </nav>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@media screen and (max-width: 650px) {
+  .navbar.open ul {
+    display: block;
+  }
+  .navbar.open .nav-toggle {
+    display: block;
+  }
+  .navbar.open a {
+    display: block;
+  }
+  .navbar .nav-toggle {
+    display: none;
+  }
+  .navbar .hamburger {
+    display: block;
+  }
+  .navbar.open .hamburger .icon-open {
+    display: none;
+  }
+  .navbar.open .hamburger .icon-close {
+    display: block;
+  }
+}
+.text-box {
+  padding: 20px 0;
+  border-bottom: solid white 1px;
 }
 ```
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+function onHamburgerClick() {
+    if (!navbar.classList.contains("open")) {
+        navbar.classList.add("open");
+    } else {
+        navbar.classList.remove("open");
+    }
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I would like to continue to learn various approaches to making nav bars responsive as well as other creating other features that are responsive to the screen size. I'd also like to create additional projects that use the same hamburger menu so I can become more comfortable with this code and better understand the html, css, and javascript. 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [screenshot resource](https://www.google.com/search?q=what+is+the+best+way+to+get+a+screenshot+of+my+webpage+for+a+readme+file&oq=what+is+the+best+way+to+get+a+screenshot+of+my+webpage+for+a+readme+file&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCTE4OTU3ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:db6142bc,vid:f6U1ak8TRj0,st:23) 
+- This helped me take a screenshot on my webpage and use this within the readme document (click inspect, click performance, and type in screenshot)
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [hamburger menu resources]
+(https://www.youtube.com/watch?v=U8smiWQ8Seg) 
+(https://www.youtube.com/watch?v=VQWu4e6agPc)
+- These videos helped me better understand how to create a responsive navbar.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Add your name here](https://learningcoding2022.github.io/Portfolio-page/)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I worked alongside Vanesa Garcia for this project. Working alongside someone provided accountability in completing tasks in certain time frames as well as encouragement. We both built our own code, but problem solved together when I encountered a few road blocks. Thanks Vanesa! 
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
