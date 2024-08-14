@@ -34,9 +34,6 @@ body {
   text-decoration: none;
   display: inline-block;
 }
-.navbar a:hover {
-  color: #f05d53;
-}
 .navbar .hamburger {
   position: absolute;
   top: 10px;
